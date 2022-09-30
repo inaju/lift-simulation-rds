@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lift Simulation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="lift-simulation">
+      <h1 class="header">Lift Simulator Project</h1>
+
+      <div class="container">
+        <div class="card-box">
+          <form>
+            <div class="floorsInput-container">
+              <label for="floorsInput" class="floorsInputLabel"
+                >Number of floors</label
+              >
+              <input
+                type="number"
+                id="floorsInput"
+                name="floorsInput"
+                required
+              />
+              <small class="errorFloor"></small>
+            </div>
+            <div class="liftsInput-container">
+              <label for="liftsInput" class="floorsInputLabel"
+                >Number of Lifts</label
+              >
+              <input type="number" id="liftsInput" name="liftsInput" required />
+              <small class="errorLift"></small>
+            </div>
+          </form>
+          <button class="btn btn-generate">Inject</button>
+        </div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
